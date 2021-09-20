@@ -1,0 +1,127 @@
+/*  
+Project Name: Auto Text Effect with Controller
+Description: Auto Text Effect to use in your hero, banner or on the website anywhere you want. Give me a thumbs-up, If you like it. Enjoy!
+Author: Abdul Samad
+Author URI: https://getabdulsamad.com/
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  background: linear-gradient(to right, rgb(247, 220, 111), rgb(249, 231, 159));
+  color: #2f2b36;
+  margin: 0;
+  height: 100vh;
+  letter-spacing: 0.3px;
+}
+
+.container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  height: 100vh;
+  width: 1280px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container h1 {
+  color: #fff;
+  font-size: 34px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 40px;
+  -webkit-text-shadow: 0 1px 3px rgb(51, 51, 24), 0 1px 2px rgb(51, 51, 54);
+  -moz-text-shadow: 0 1px 3px rgb(51, 51, 24), 0 1px 2px rgb(51, 51, 54);
+  text-shadow: 0 1px 3px rgb(51, 51, 24), 0 1px 2px rgb(51, 51, 54);
+}
+
+.speed-controller {
+  position: absolute;
+  bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 20px;
+  font-weight: 500;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-gap: 10px;
+  -moz-gap: 10px;
+  gap: 10px;
+}
+
+.speed-controller input {
+  font-family: inherit;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 3px;
+  border: 0;
+  background-color: rgba(6, 6, 6, 0.14);
+  font-size: 18px;
+  width: 80px;
+  padding: 5px;
+}
+
+.speed-controller input:focus {
+  outline: none;
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 3px;
+  border: 0;
+  background-color: rgba(6, 6, 6, 0.14);
+  font-size: 16px;
+  padding: 7px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.3px;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #2f2b36;
+}
+
+.btn:active {
+  -webkit-transform: scale(0.98);
+  -moz-transform: scale(0.98);
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: none;
+  background-color: #2f2b36;
+}
